@@ -23,7 +23,7 @@ setuptools.setup(
     python_requires=">=3.9",
     entry_points={
         'console_scripts': [
-            "gh-downloader=main:main"
+            "gh-downloader=main:cli"
         ]
     },
     install_requires=[

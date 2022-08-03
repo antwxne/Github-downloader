@@ -88,5 +88,12 @@ def main():
     clone_repository(to_download, user_infos["FOLDER"])
 
 
+def cli():
+    try:
+        main()
+    except:
+        pass
+
+
 if __name__ == "__main__":
-    main()
+    cli()

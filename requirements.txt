@@ -1,4 +1,3 @@
 inquirer
 requests
-python-dateutil
 tqdm

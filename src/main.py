@@ -50,7 +50,7 @@ def clone_repository(repository_list: list[Repository], folder: str) -> None:
                        stderr=subprocess.DEVNULL)
 
 
-if __name__ == "__main__":
+def main():
     user_infos = inquirer.prompt([
         inquirer.Password(
             'OAUTH',
@@ -86,3 +86,7 @@ if __name__ == "__main__":
         print("Canceled")
         sys.exit(1)
     clone_repository(to_download, user_infos["FOLDER"])
+
+
+if __name__ == "__main__":
+    main()
